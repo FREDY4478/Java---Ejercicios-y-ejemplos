@@ -1,6 +1,6 @@
 
-/**
- *  Por: Matías Muñoz Espinoza
+/*
+ *	Por: Matías Muñoz Espinoza
  *	Problema: Crear una programa qu calcule el promedio de 3 notas ingresadas por
  *		el usuario, utilizando el bucle do while.
  */

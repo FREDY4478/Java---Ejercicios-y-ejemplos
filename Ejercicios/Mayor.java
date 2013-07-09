@@ -1,6 +1,6 @@
 
-/**
- *  Por: Matías Muñoz Espinoza
+/*
+ *	Por: Matías Muñoz Espinoza
  *	Problema: Escriba un programa que indique cuál es el mayor de dos números
  *		utilizando un método.
  */

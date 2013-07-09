@@ -1,5 +1,5 @@
 
-/**
+/*
  *  Por: Matías Muñoz Espinoza
  *	Problema: Crear una función que permita calcular el valor en pesos chilenos de un 
  *		producto si como parámetro de entrada recibe un valor en dólares.

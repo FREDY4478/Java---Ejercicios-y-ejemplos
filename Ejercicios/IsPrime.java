@@ -1,6 +1,6 @@
 
-/**
- *  Por: Matías Muñoz Espinoza
+/*
+ *	Por: Matías Muñoz Espinoza
  *	Problema: Crear un método que retorne verdadero o falso si el parámetro
  *		ingresado es o no un número primo.
  */

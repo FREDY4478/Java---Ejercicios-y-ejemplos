@@ -1,6 +1,6 @@
 
-/**
- *  Por: Matías Muñoz Espinoza
+/*
+ *	Por: Matías Muñoz Espinoza
  *	Problema: Escriba un agoritmo que imprima los números múltiplos de 4 y múltiplo 
  *		de 7 comprendidos en el rango de 300 a 400 usando for, while y do while.
  */

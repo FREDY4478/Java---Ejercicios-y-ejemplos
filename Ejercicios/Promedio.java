@@ -1,5 +1,5 @@
 
-/**
+/*
  *  Por: Matías Muñoz Espinoza
  *	Problema: Escriba un programa en java que calcule el promedio de 3 
  *		notas dijitadas por teclado. El promedio debe ser calculado mediante una

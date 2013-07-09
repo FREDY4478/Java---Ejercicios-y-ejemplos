@@ -1,6 +1,6 @@
 
-/**
- *  Por: Matías Muñoz Espinoza
+/*
+ *	Por: Matías Muñoz Espinoza
  *	Problema:
  *	Crear un método que permita calcular el factorial de un número.
  */

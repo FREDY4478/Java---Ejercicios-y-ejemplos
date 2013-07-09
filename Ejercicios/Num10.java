@@ -1,6 +1,6 @@
 
-/**
- *  Por: Matías Muñoz Espinoza
+/*
+ *	Por: Matías Muñoz Espinoza
  *	Problema: Escriba un programa que al ingresar 10 números. Luego imprima sólo los
  *		numeros positivos ingresados.
  */
