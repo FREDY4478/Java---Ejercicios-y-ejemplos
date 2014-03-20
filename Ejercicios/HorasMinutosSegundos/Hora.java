@@ -7,12 +7,17 @@ public class Hora
 	
 	Hora (int hora, int min, int seg)
 	{
-		this.setHora(hora);
-		this.setMin(min);
-		this.setSeg(seg);
+		if (isHora(hora, min, seg)) {
+			this.setHora(hora);
+			this.setMin(min);
+			this.setSeg(seg);
+		}
+		
+		else
+			System.out.println ("-- no es una hora valida, no fue asignada --");
 	}
 	
-	// Métodos accesores
+	// Accesores
 	//
 
 	public void setHora (int hora) 
@@ -45,7 +50,7 @@ public class Hora
 
 	public int getMin () { return this.min; }
 
-	// Acciones
+	// Comportamientos
 	//
 	
 	public void restablecer (int hora, int min, int seg)
@@ -57,24 +62,56 @@ public class Hora
 
 	public void adelantar (int hora, int min, int seg)
 	{
-		int totalHora = getHora() + hora;
-		int totalMin = getMin() + min;
-		int totalSeg = getSeg() + seg;
+		if (isHora(hora, min, seg)) {
+			int totalHora = getHora() + hora;
+			int totalMin = getMin() + min;
+			int totalSeg = getSeg() + seg;
+			
+			if (totalSeg < 60)
+				this.setSeg(totalSeg);
+			
+			else {
+				this.setSeg(0);
+				totalMin++;
+			}
 
-		if (24 < totalHora
-			&& 60 < totalMin
-			&& 60 < totalSeg) {
+			if (totalMin < 60)
+				this.setMin(totalMin);
+				
+			else {
+				this.setMin(0);
+				totalHora++;
+			}
+			
+			if (totalHora < 24)
+				this.setHora(totalHora);
 
-			this.setHora(totalHora);
-			this.setMin(totalMin);
-			this.setSeg(totalMin);
+			else
+				this.setHora(totalHora - 24);
 		}
+		
+		else
+			System.out.println ("-- la hora ingresada no es valida --");
 	}
-
+	
 	public void mostrar ()
 	{
 		System.out.println(this.getHora() 
 			+ ":" + this.getMin()
 			+ ":" + this.getSeg());
+	}
+	
+	public static boolean isHora (int hora, int min, int seg) 
+	{
+		boolean isHora = true;
+		
+		if (hora > 23 && hora < 0
+			&& min > 60 && min < 0
+			&& seg > 60 && seg < 0) {
+			
+			isHora = false;
+		}
+		
+		return isHora;
 	}
 }

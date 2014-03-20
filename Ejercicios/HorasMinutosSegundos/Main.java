@@ -20,5 +20,7 @@ public class Main
 		h1.mostrar();
 		h1.restablecer (22, 14, 22);
 		h1.mostrar();
+		h1.adelantar (4, 0, 0);
+		h1.mostrar();
 	}
 }
